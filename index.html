@@ -347,8 +347,8 @@
           <div class="titlebar"><span>LECTURAS EN VIVO</span><div class="dots"><span></span><span></span><span></span></div></div>
           <div class="panel">
             <div class="metrics">
-              <div class="metric"><div class="label">TEMP. GPIO35</div><div class="value"><span id="ambientTemp">--</span><span class="unit"> °C</span></div></div>
-              <div class="metric"><div class="label">TEMP. GPIO34</div><div class="value"><span id="waterTemp">--</span><span class="unit"> °C</span></div></div>
+              <div class="metric"><div class="label">TEMP. INTERIOR DUCHA</div><div class="value"><span id="ambientTemp">--</span><span class="unit"> °C</span></div></div>
+              <div class="metric"><div class="label">TEMP. AMBIENTE</div><div class="value"><span id="waterTemp">--</span><span class="unit"> °C</span></div></div>
               <div class="metric"><div class="label">CAUDAL</div><div class="value"><span id="flow">--</span><span class="unit"> L/min</span></div></div>
               <div class="metric"><div class="label">DUTY SSR</div><div class="value"><span id="duty">--</span><span class="unit"> %</span></div></div>
             </div>
@@ -426,7 +426,7 @@
           <div class="panel">
             <div class="form-grid">
               <div class="full"><label>BROKER WEB</label><input id="brokerUrl" value="wss://broker.emqx.io:8084/mqtt"></div>
-              <div class="full"><label>TOPICO BASE</label><input id="baseTopic" value="upsa/ducha_termica/a2023111625"></div>
+              <div class="full"><label>TOPICO BASE</label<input id="baseTopic" value="UPSA/DuchaTermostatica"></div>
             </div>
             <div class="btn-row"><button class="connect" onclick="connectMqtt()">CONECTAR</button><button class="warnbtn" onclick="disconnectMqtt()">DESCONECTAR</button><button class="soft" onclick="askStatus()">STATUS</button></div>
           </div>
